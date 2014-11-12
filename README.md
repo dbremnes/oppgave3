@@ -1,4 +1,0 @@
-oppgave3
-========
-
-mineKlasser
