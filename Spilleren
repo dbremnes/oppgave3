@@ -1,0 +1,87 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+
+import javax.swing.JOptionPane;
+
+
+
+public class Spilleren
+{
+	
+public Spilleren(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
+private static void main (String [] args)
+{
+
+	
+
+    //Egenskaper: navn, alder (etc…), poengsummer (array), 
+    //Metoder: getPoengsum(Arg: type[ total, max, min, etc ]), setNyScore(), 
+
+    private String name;    // Spillers navn
+    private int alder;       // Spiller spillertype
+    private int health;        // Spiller helse
+    private int poengsummer[]; 
+    private int nivaa; 
+    public int sum;
+	private String type;
+    /**
+     * Oppretter spiller med navn
+     * @return 
+     * @return 
+     */ 
+    public  Object Player (String name, String type){ // Konstruktør
+        this.name = name; 
+        this.type = type; 
+        health = 100;
+        nivaa=0;
+        
+        name = (JOptionPane.showInputDialog(null,"Skriv inn ditt navn:", "Navn", JOptionPane.PLAIN_MESSAGE));
+
+    }
+
+   public int getTotalPoengsum(){
+	   
+	  
+    // Summer poengsummene (Fra arrayen)
+    return sum;
+    
+   }
+   private void poengUnderveis(Graphics2D g) {
+
+       int i;
+       String s;
+
+       Font smallfont;
+	g.setFont(smallfont);
+       g.setColor(new Color(96, 128, 255));
+       String score;
+	s = "Poengsum: " + poengsummer;
+       int scrsize;
+	g.drawString(s, scrsize / 2 + 96, scrsize + 16);
+
+       int resterendeOrd;
+       resterendeOrd = //få inn hvor mange ord det er igjen;
+	for (i = 0; i < resterendeOrd; i++) {
+           g.drawImage(resterendeOrd, i * 28 + 8, scrsize + 1, this) 
+	}
+   public int getNivaa()//må ha spillerens nivå, det hører til i spiller
+	
+   {
+return nivaa;
+   }
+  public int lagrePoengsum( int poengsum;
+  {
+    int antalSummer = poengsummer.length;;
+    //  poengsummer[antalSummer] = poengsum;
+    
+  }
+
+//skal du opprette en new Player() nå, må du altså sende med 2 strings. 
+ 
+Spilleren spiller1 = new Spilleren("Navn", "Type");
+}
+}
